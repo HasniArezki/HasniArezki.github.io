@@ -147,11 +147,12 @@ body::before{content:'';position:fixed;top:0;left:0;width:100%;height:100%;backg
 .activity-item{display:grid;grid-template-columns:110px 1fr;gap:1.2rem;padding-bottom:1rem;border-bottom:1px solid var(--line);transition:transform .3s;opacity:0;animation:fadeUp .4s ease-out forwards}
 .activity-item:nth-child(1){animation-delay:.02s}.activity-item:nth-child(2){animation-delay:.07s}.activity-item:nth-child(3){animation-delay:.12s}.activity-item:nth-child(4){animation-delay:.17s}.activity-item:nth-child(5){animation-delay:.22s}.activity-item:nth-child(6){animation-delay:.27s}.activity-item:nth-child(7){animation-delay:.32s}.activity-item:nth-child(8){animation-delay:.37s}.activity-item:nth-child(9){animation-delay:.42s}
 .activity-item:hover{transform:translateX(4px)}
-.activity-type{font-family:'JetBrains Mono',monospace;font-size:.66rem;color:var(--accent);letter-spacing:.06em;text-transform:uppercase;padding-top:.1rem}
+.activity-type{font-family:'JetBrains Mono',monospace;font-size:.66rem;color:var(--accent);letter-spacing:.06em;text-transform:uppercase;padding-top:.1rem;font-weight:700}
 .activity-text{font-size:.88rem;color:var(--muted);line-height:1.65}
 
 /* Highlight activity */
-.activity-item.highlight{background:linear-gradient(90deg,var(--accent-light) 0%,transparent 100%);padding:1rem 1.2rem;border-left:3px solid var(--accent);border-bottom:1px solid var(--line);margin-bottom:.2rem}
+.activity-item.highlight{background:linear-gradient(90deg,var(--accent-light) 0%,transparent 100%);padding:1rem 1rem 1rem 1rem;border-left:3px solid var(--accent);border-bottom:none;margin-bottom:.4rem;transition:transform .3s ease-out,box-shadow .3s ease-out}
+.activity-item.highlight:hover{transform:translateX(6px);box-shadow:0 6px 20px rgba(139,58,58,.12)}
 .activity-item.highlight .activity-text{color:var(--ink);font-weight:500}
 
 /* Video cards */
@@ -237,7 +238,7 @@ body::before{content:'';position:fixed;top:0;left:0;width:100%;height:100%;backg
         </div>
         <div class="hero-visual">
           <div class="hero-card">
-            <img class="hero-photo" src="photo.jpg" alt="Hasni Arezki">
+            <img class="hero-photo" src='data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200"><defs><linearGradient id="g" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#8b3a3a"/><stop offset="100%" stop-color="#6e2d2d"/></linearGradient></defs><rect width="200" height="200" fill="url(%23g)"/><text x="100" y="100" font-family="Georgia, serif" font-size="78" font-weight="600" fill="%23f6f4f0" text-anchor="middle" dominant-baseline="central" letter-spacing="2">HA</text></svg>' alt="Hasni Arezki">
             <div class="card-institution">Université Polytechnique Hauts-de-France</div>
             <div class="card-position">Postdoctoral Researcher</div>
             <div class="card-lab">LAMIH — Laboratory of Industrial and Human Automation, Control, Mechanics and Computer Science</div>
@@ -304,26 +305,26 @@ body::before{content:'';position:fixed;top:0;left:0;width:100%;height:100%;backg
       <div id="pubContainer">
         <div class="pub-section-label" data-section="journal">International Journals</div>
         <div class="pub-list" data-section="journal">
-          <div class="pub-item" data-type="journal"><span class="pub-num">1</span><span class="pub-content"><span class="pub-authors-inline"><strong>H. Arezki</strong>, A. Zemouche, A. Alessandri.</span> <span class="pub-title-inline">Robust Moving Horizon Estimation Schemes for Nonlinear Systems Through Advanced Prediction Strategies.</span> <span class="pub-venue-inline">IEEE Transactions on Automatic Control, Accepted.</span></span><span class="pub-badge">JIF 7.0 · Q1</span></div>
-          <div class="pub-item" data-type="journal"><span class="pub-num">2</span><span class="pub-content"><span class="pub-authors-inline"><strong>H. Arezki</strong>, A. Zemouche, P. Bagnerini.</span> <span class="pub-title-inline">Observer Design for Nonlinear Systems with Delayed Output Measurement.</span> <span class="pub-venue-inline">Automatica, Volume 183, 2026, 112663.</span></span><span class="pub-badge">JIF 5.9 · Q1</span></div>
-          <div class="pub-item" data-type="journal"><span class="pub-num">3</span><span class="pub-content"><span class="pub-authors-inline"><strong>H. Arezki</strong>, K. Chaib Draa, A. Zemouche, T.C. Pin.</span> <span class="pub-title-inline">State Estimation and Output Feedback Stabilization for Switched Linear Discrete-Time Systems with Delayed-Outputs.</span> <span class="pub-venue-inline">European Journal of Control, vol. 84, 2025, 101229.</span></span><span class="pub-badge">JIF 2.6 · Q2</span></div>
-          <div class="pub-item" data-type="journal"><span class="pub-num">4</span><span class="pub-content"><span class="pub-authors-inline"><strong>H. Arezki</strong>, A. Zemouche, A. Alessandri, P. Bagnerini.</span> <span class="pub-title-inline">LMI Design Procedure for Incremental Input/Output-to-State Stability in Nonlinear Systems.</span> <span class="pub-venue-inline">IEEE Control Systems Letters, vol. 7, pp. 3403–3408, 2023.</span></span><span class="pub-badge">JIF 2.0 · Q2</span></div>
-          <div class="pub-item" data-type="journal"><span class="pub-num">5</span><span class="pub-content"><span class="pub-authors-inline"><strong>H. Arezki</strong>, A. Zemouche.</span> <span class="pub-title-inline">Simple but Useful Contributions to High-Gain Observer for Non-Triangular Systems.</span> <span class="pub-venue-inline">IEEE Control Systems Letters, vol. 7, pp. 3343–3348, 2023.</span></span><span class="pub-badge">JIF 2.0 · Q2</span></div>
-          <div class="pub-item" data-type="journal"><span class="pub-num">6</span><span class="pub-content"><span class="pub-authors-inline"><strong>H. Arezki</strong>, A. Zemouche, F. Bedouhene, A. Alessandri.</span> <span class="pub-title-inline">State Observer Design Method for a Class of Nonlinear Systems.</span> <span class="pub-venue-inline">IET Control Theory & Applications, vol. 14, no. 12, pp. 1648–1655, 2020.</span></span><span class="pub-badge">JIF 2.3 · Q2</span></div>
+          <div class="pub-item" data-type="journal"><span class="pub-num">1</span><span class="pub-content"><span class="pub-authors-inline"><strong>H. Arezki</strong>, A. Zemouche, A. Alessandri.</span> <span class="pub-title-inline">Robust Moving Horizon Estimation with Diverse Prior Predictions for Nonlinear Systems.</span> <span class="pub-venue-inline">IEEE Transactions on Automatic Control, 2026. <a href="https://doi.org/10.1109/TAC.2026.3676243" target="_blank" style="color:var(--accent);text-decoration:none;border-bottom:1px dotted var(--accent)">doi:10.1109/TAC.2026.3676243</a></span></span><span class="pub-badge">JIF 7.0 · Q1</span></div>
+          <div class="pub-item" data-type="journal"><span class="pub-num">2</span><span class="pub-content"><span class="pub-authors-inline"><strong>H. Arezki</strong>, A. Zemouche, P. Bagnerini.</span> <span class="pub-title-inline">Observer Design for Nonlinear Systems with Delayed Output Measurement.</span> <span class="pub-venue-inline">Automatica, Volume 183, 2026, 112663. <a href="https://doi.org/10.1016/j.automatica.2025.112663" target="_blank" style="color:var(--accent);text-decoration:none;border-bottom:1px dotted var(--accent)">doi:10.1016/j.automatica.2025.112663</a></span></span><span class="pub-badge">JIF 5.9 · Q1</span></div>
+          <div class="pub-item" data-type="journal"><span class="pub-num">3</span><span class="pub-content"><span class="pub-authors-inline"><strong>H. Arezki</strong>, K. Chaib Draa, A. Zemouche, T.C. Pin.</span> <span class="pub-title-inline">State Estimation and Output Feedback Stabilization for Switched Linear Discrete-Time Systems with Delayed-Outputs.</span> <span class="pub-venue-inline">European Journal of Control, vol. 84, 2025, 101229. <a href="https://doi.org/10.1016/j.ejcon.2025.101229" target="_blank" style="color:var(--accent);text-decoration:none;border-bottom:1px dotted var(--accent)">doi:10.1016/j.ejcon.2025.101229</a></span></span><span class="pub-badge">JIF 2.6 · Q2</span></div>
+          <div class="pub-item" data-type="journal"><span class="pub-num">4</span><span class="pub-content"><span class="pub-authors-inline"><strong>H. Arezki</strong>, A. Zemouche, A. Alessandri, P. Bagnerini.</span> <span class="pub-title-inline">LMI Design Procedure for Incremental Input/Output-to-State Stability in Nonlinear Systems.</span> <span class="pub-venue-inline">IEEE Control Systems Letters, vol. 7, pp. 3403–3408, 2023. <a href="https://doi.org/10.1109/LCSYS.2023.3331684" target="_blank" style="color:var(--accent);text-decoration:none;border-bottom:1px dotted var(--accent)">doi:10.1109/LCSYS.2023.3331684</a></span></span><span class="pub-badge">JIF 2.0 · Q2</span></div>
+          <div class="pub-item" data-type="journal"><span class="pub-num">5</span><span class="pub-content"><span class="pub-authors-inline"><strong>H. Arezki</strong>, A. Zemouche.</span> <span class="pub-title-inline">Simple but Useful Contributions to High-Gain Observer for Non-Triangular Systems.</span> <span class="pub-venue-inline">IEEE Control Systems Letters, vol. 7, pp. 3343–3348, 2023. <a href="https://doi.org/10.1109/LCSYS.2023.3327116" target="_blank" style="color:var(--accent);text-decoration:none;border-bottom:1px dotted var(--accent)">doi:10.1109/LCSYS.2023.3327116</a></span></span><span class="pub-badge">JIF 2.0 · Q2</span></div>
+          <div class="pub-item" data-type="journal"><span class="pub-num">6</span><span class="pub-content"><span class="pub-authors-inline"><strong>H. Arezki</strong>, A. Zemouche, F. Bedouhene, A. Alessandri.</span> <span class="pub-title-inline">State Observer Design Method for a Class of Nonlinear Systems.</span> <span class="pub-venue-inline">IET Control Theory & Applications, vol. 14, no. 12, pp. 1648–1655, 2020. <a href="https://doi.org/10.1049/iet-cta.2020.0059" target="_blank" style="color:var(--accent);text-decoration:none;border-bottom:1px dotted var(--accent)">doi:10.1049/iet-cta.2020.0059</a></span></span><span class="pub-badge">JIF 2.3 · Q2</span></div>
         </div>
 
         <div class="pub-section-label" data-section="conf">International Conferences</div>
         <div class="pub-list" data-section="conf">
           <div class="pub-item" data-type="conf"><span class="pub-num">1</span><span class="pub-content"><span class="pub-authors-inline"><strong>H. Arezki</strong>, C. Sentouh, J.-C. Popieul.</span> <span class="pub-title-inline">Observer-Based Control of Nonlinear Coupled Vehicle Dynamics with State Dependent Measurement Uncertainties.</span> <span class="pub-venue-inline">23rd IFAC World Congress 2026, Busan, Republic of Korea.</span></span><span class="pub-badge">IFAC WC</span></div>
           <div class="pub-item" data-type="conf"><span class="pub-num">2</span><span class="pub-content"><span class="pub-authors-inline">S. Bougherara, <strong>H. Arezki</strong>, C. Sentouh, J.-C. Popieul.</span> <span class="pub-title-inline">Robust Observer-Based Trajectory Tracking for Autonomous Vehicles in Roundabouts.</span> <span class="pub-venue-inline">23rd IFAC World Congress 2026, Busan, Republic of Korea.</span></span><span class="pub-badge">IFAC WC</span></div>
-          <div class="pub-item" data-type="conf"><span class="pub-num">3</span><span class="pub-content"><span class="pub-authors-inline"><strong>H. Arezki</strong>, A. Zemouche, P. Bagnerini.</span> <span class="pub-title-inline">Observer-based Controller for a Tumor Growth Model with Delayed Output Measurement.</span> <span class="pub-venue-inline">ACC 2025, Denver, CO, USA.</span></span><span class="pub-badge">ACC</span></div>
+          <div class="pub-item" data-type="conf"><span class="pub-num">3</span><span class="pub-content"><span class="pub-authors-inline"><strong>H. Arezki</strong>, A. Zemouche, P. Bagnerini.</span> <span class="pub-title-inline">Observer-based Controller for a Tumor Growth Model with Delayed Output Measurement.</span> <span class="pub-venue-inline">ACC 2025, Denver, CO, USA, pp. 4635-4640. <a href="https://doi.org/10.23919/ACC63710.2025.11108121" target="_blank" style="color:var(--accent);text-decoration:none;border-bottom:1px dotted var(--accent)">doi:10.23919/ACC63710.2025.11108121</a></span></span><span class="pub-badge">ACC</span></div>
           <div class="pub-item" data-type="conf"><span class="pub-num">4</span><span class="pub-content"><span class="pub-authors-inline">S. Bougherara, <strong>H. Arezki</strong>, C. Sentouh, J. Floris, J.-C. Popieul.</span> <span class="pub-title-inline">Adaptive Trajectory Prediction in Roundabouts Using Moving Horizon Estimation.</span> <span class="pub-venue-inline">ICINCO 2025, Marbella, Spain.</span></span><span class="pub-badge">ICINCO</span></div>
           <div class="pub-item" data-type="conf"><span class="pub-num">5</span><span class="pub-content"><span class="pub-authors-inline"><strong>H. Arezki</strong>, A. Zemouche.</span> <span class="pub-title-inline">Observer Design for Nonlinear Systems with Delayed Nonlinear Output Measurement.</span> <span class="pub-venue-inline">ECC 2024, Stockholm, Sweden.</span></span><span class="pub-badge">ECC</span></div>
           <div class="pub-item" data-type="conf"><span class="pub-num">6</span><span class="pub-content"><span class="pub-authors-inline"><strong>H. Arezki</strong>, A. Zemouche, A. Alessandri, P. Bagnerini.</span> <span class="pub-title-inline">LMI Design Procedure for Incremental Input/Output-to-State Stability in Nonlinear Systems.</span> <span class="pub-venue-inline">ACC 2024, Toronto, Canada.</span></span><span class="pub-badge">ACC</span></div>
           <div class="pub-item" data-type="conf"><span class="pub-num">7</span><span class="pub-content"><span class="pub-authors-inline"><strong>H. Arezki</strong>, A. Zemouche.</span> <span class="pub-title-inline">Simple but Useful Contributions to High-Gain Observer for Non-Triangular Systems.</span> <span class="pub-venue-inline">ACC 2024, Toronto, Canada.</span></span><span class="pub-badge">ACC</span></div>
-          <div class="pub-item" data-type="conf"><span class="pub-num">8</span><span class="pub-content"><span class="pub-authors-inline"><strong>H. Arezki</strong>, A. Zemouche, P. Bagnerini, S. Djennoune.</span> <span class="pub-title-inline">LMI Feasibility Analysis in Observer Design for Some Families of Nonlinear Systems.</span> <span class="pub-venue-inline">62nd IEEE CDC, 2023, Singapore.</span></span><span class="pub-badge">CDC</span></div>
+          <div class="pub-item" data-type="conf"><span class="pub-num">8</span><span class="pub-content"><span class="pub-authors-inline"><strong>H. Arezki</strong>, A. Zemouche, P. Bagnerini, S. Djennoune.</span> <span class="pub-title-inline">LMI Feasibility Analysis in Observer Design for Some Families of Nonlinear Systems.</span> <span class="pub-venue-inline">62nd IEEE CDC, 2023, Singapore. <a href="https://doi.org/10.1109/CDC49753.2023.10383614" target="_blank" style="color:var(--accent);text-decoration:none;border-bottom:1px dotted var(--accent)">doi:10.1109/CDC49753.2023.10383614</a></span></span><span class="pub-badge">CDC</span></div>
           <div class="pub-item" data-type="conf"><span class="pub-num">9</span><span class="pub-content"><span class="pub-authors-inline"><strong>H. Arezki</strong>, A. Alessandri, A. Zemouche.</span> <span class="pub-title-inline">Robust Moving-Horizon Estimation for Quasi-LPV Discrete-Time Systems.</span> <span class="pub-venue-inline">22nd IFAC World Congress, 2023, Yokohama.</span></span><span class="pub-badge">IFAC WC</span></div>
-          <div class="pub-item" data-type="conf"><span class="pub-num">10</span><span class="pub-content"><span class="pub-authors-inline"><strong>H. Arezki</strong>, A. Alessandri, A. Zemouche.</span> <span class="pub-title-inline">Robust Stability Analysis of Moving-Horizon Estimator for LPV Discrete-Time Systems.</span> <span class="pub-venue-inline">22nd IFAC World Congress, 2023, Yokohama.</span></span><span class="pub-badge">IFAC WC</span></div>
+          <div class="pub-item" data-type="conf"><span class="pub-num">10</span><span class="pub-content"><span class="pub-authors-inline"><strong>H. Arezki</strong>, A. Alessandri, A. Zemouche.</span> <span class="pub-title-inline">Robust Stability Analysis of Moving-Horizon Estimator for LPV Discrete-Time Systems.</span> <span class="pub-venue-inline">22nd IFAC World Congress, 2023, Yokohama. <a href="https://doi.org/10.1016/j.ifacol.2023.10.456" target="_blank" style="color:var(--accent);text-decoration:none;border-bottom:1px dotted var(--accent)">doi:10.1016/j.ifacol.2023.10.456</a></span></span><span class="pub-badge">IFAC WC</span></div>
           <div class="pub-item" data-type="conf"><span class="pub-num">11</span><span class="pub-content"><span class="pub-authors-inline"><strong>H. Arezki</strong>, A. Alessandri, A. Zemouche.</span> <span class="pub-title-inline">Robust Moving Horizon Estimation for Lateral Vehicle Dynamics.</span> <span class="pub-venue-inline">ECC 2023, Bucharest, Romania.</span></span><span class="pub-badge">ECC</span></div>
           <div class="pub-item" data-type="conf"><span class="pub-num">12</span><span class="pub-content"><span class="pub-authors-inline"><strong>H. Arezki</strong>, F. Zhang, A. Zemouche.</span> <span class="pub-title-inline">A HG/LMI-Based Observer for a Tumor Growth Model.</span> <span class="pub-venue-inline">ECC 2022, London, UK.</span></span><span class="pub-badge">ECC</span></div>
           <div class="pub-item" data-type="conf"><span class="pub-num">13</span><span class="pub-content"><span class="pub-authors-inline"><strong>H. Arezki</strong>, D. Bouhadjra, K. Chaib Draa, A. Zemouche, I. N'Doye, T.M. Laleg-Kirati.</span> <span class="pub-title-inline">LMI Feasibility Improvement to Design Observers for a Class of Lipschitz Nonlinear Systems.</span> <span class="pub-venue-inline">60th IEEE CDC, 2021, Austin, TX.</span></span><span class="pub-badge">CDC</span></div>
@@ -371,11 +372,11 @@ body::before{content:'';position:fixed;top:0;left:0;width:100%;height:100%;backg
     <div class="page-inner">
       <div class="page-title-row"><span class="page-num">05</span><h2 class="page-title">Scientific Activities</h2><div class="page-line"></div></div>
       <div class="activities-list">
-        <div class="activity-item highlight"><div class="activity-type">Distinction</div><div class="activity-text">Candidate for the <strong>Prix Jeunes Talents France L'Oréal-UNESCO Pour les Femmes et la Science</strong>.</div></div>
+        <div class="activity-item"><div class="activity-type">Distinction</div><div class="activity-text">Candidate for the Prix Jeunes Talents France L'Oréal-UNESCO Pour les Femmes et la Science.</div></div>
         <div class="activity-item"><div class="activity-type">Editorial</div><div class="activity-text">Associate Editor for the 34th Mediterranean Conference on Control and Automation (MED 2026), Ancona, Italy.</div></div>
         <div class="activity-item"><div class="activity-type">Reviewing</div><div class="activity-text">Reviewer for IEEE TAC, Automatica, SIAM, Systems and Control Letters, European Journal of Control, IEEE CDC, ACC, ECC, IFAC World Congress.</div></div>
         <div class="activity-item"><div class="activity-type">Co-Chair</div><div class="activity-text">Session "Estimation and Identification II", IEEE American Control Conference (ACC 2024), Toronto.</div></div>
-        <div class="activity-item"><div class="activity-type">Invited Session</div><div class="activity-text">Organization of "Estimation and Control for Automated Vehicles" session at MED 2026, Ancona, Italy.</div></div>
+        <div class="activity-item"><div class="activity-type">Invited Session</div><div class="activity-text">Organization of "Estimation and Control for Automated Vehicles: From Human-in-the-Loop to Fully Autonomous Systems" session at MED 2026, Ancona, Italy.</div></div>
         <div class="activity-item"><div class="activity-type">Seminars</div><div class="activity-text">INSA Rouen (April 2024) and University of Groningen (April 2024) on MHE and robust stability.</div></div>
         <div class="activity-item"><div class="activity-type">PhD Collab.</div><div class="activity-text">Collaboration with Ph.D. students S. Bougherara (autonomous roundabout insertion) and M. Boudaoud (fault-tolerant steer-by-wire control).</div></div>
         <div class="activity-item"><div class="activity-type">Project</div><div class="activity-text">PHC NUSANTARA 2026 REACT-AGV proposal (Resilient Estimation and Adaptive Control Technology for AGV).</div></div>
@@ -422,38 +423,80 @@ body::before{content:'';position:fixed;top:0;left:0;width:100%;height:100%;backg
 <script>
 function switchPage(id){
   document.querySelectorAll('.page').forEach(p=>p.classList.remove('active'));
-  const t=document.getElementById('page-'+id);
-  if(t){t.classList.add('active');t.style.animation='none';t.offsetHeight;t.style.animation=''}
-  document.querySelectorAll('.nav-tab').forEach(t=>t.classList.remove('active'));
-  const tab=document.querySelector('.nav-tab[data-page="'+id+'"]');
-  if(tab){tab.classList.add('active');tab.scrollIntoView({behavior:'smooth',block:'nearest',inline:'center'})}
+  var pageEl=document.getElementById('page-'+id);
+  if(pageEl){
+    pageEl.classList.add('active');
+    pageEl.style.animation='none';
+    void pageEl.offsetHeight;
+    pageEl.style.animation='';
+  }
+  document.querySelectorAll('.nav-tab').forEach(function(nt){nt.classList.remove('active');});
+  var tab=document.querySelector('.nav-tab[data-page="'+id+'"]');
+  if(tab){
+    tab.classList.add('active');
+    try{tab.scrollIntoView({behavior:'smooth',block:'nearest',inline:'center'});}catch(e){}
+  }
   window.scrollTo({top:0,behavior:'smooth'});
-  if(id==='education')t.querySelectorAll('.timeline-item').forEach(i=>{i.style.animation='none';i.offsetHeight;i.style.animation=''});
-  if(id==='publications')t.querySelectorAll('.pub-item').forEach(i=>{i.style.animation='none';i.offsetHeight;i.style.animation=''});
-  if(id==='activities')t.querySelectorAll('.activity-item').forEach(i=>{i.style.animation='none';i.offsetHeight;i.style.animation=''});
+  if(pageEl){
+    if(id==='education')pageEl.querySelectorAll('.timeline-item').forEach(function(i){i.style.animation='none';void i.offsetHeight;i.style.animation='';});
+    if(id==='publications')pageEl.querySelectorAll('.pub-item').forEach(function(i){i.style.animation='none';void i.offsetHeight;i.style.animation='';});
+    if(id==='activities')pageEl.querySelectorAll('.activity-item').forEach(function(i){i.style.animation='none';void i.offsetHeight;i.style.animation='';});
+  }
   if(id==='home')animateCounters();
 }
-document.querySelectorAll('.nav-tab').forEach(t=>t.addEventListener('click',()=>switchPage(t.dataset.page)));
-function animateCounters(){document.querySelectorAll('.stat-number[data-target]').forEach(el=>{const target=parseInt(el.dataset.target);const duration=1600;const start=performance.now();const animate=now=>{const progress=Math.min((now-start)/duration,1);const eased=1-Math.pow(1-progress,3);el.textContent=Math.round(eased*target);if(progress<1)requestAnimationFrame(animate)};requestAnimationFrame(animate)})}
-setTimeout(animateCounters,400);
 
-document.querySelectorAll('.pub-filter-btn').forEach(btn=>{
-  btn.addEventListener('click',()=>{
-    document.querySelectorAll('.pub-filter-btn').forEach(b=>b.classList.remove('active'));
-    btn.classList.add('active');
-    const f=btn.dataset.filter;
-    document.querySelectorAll('#pubContainer .pub-section-label, #pubContainer .pub-list').forEach(el=>{
-      el.style.display=(f==='all'||el.dataset.section===f)?'':'none';
-    });
-      let idx=0;
-    document.querySelectorAll('#pubContainer .pub-item').forEach(item=>{
-      if(f==='all'||item.dataset.type===f){
-        item.classList.remove('hidden');item.style.animation='none';item.offsetHeight;
-        item.style.animationDelay=(idx*0.03)+'s';item.style.animation='';idx++;
-      } else {item.classList.add('hidden');}
+function animateCounters(){
+  document.querySelectorAll('.stat-number[data-target]').forEach(function(el){
+    var target=parseInt(el.dataset.target,10);
+    var duration=1600;
+    var start=performance.now();
+    function step(now){
+      var progress=Math.min((now-start)/duration,1);
+      var eased=1-Math.pow(1-progress,3);
+      el.textContent=Math.round(eased*target);
+      if(progress<1)requestAnimationFrame(step);
+    }
+    requestAnimationFrame(step);
+  });
+}
+
+function initPortfolio(){
+  document.querySelectorAll('.nav-tab').forEach(function(tab){
+    tab.addEventListener('click',function(){
+      switchPage(tab.dataset.page);
     });
   });
-});
+  document.querySelectorAll('.pub-filter-btn').forEach(function(btn){
+    btn.addEventListener('click',function(){
+      document.querySelectorAll('.pub-filter-btn').forEach(function(b){b.classList.remove('active');});
+      btn.classList.add('active');
+      var f=btn.dataset.filter;
+      document.querySelectorAll('#pubContainer .pub-section-label, #pubContainer .pub-list').forEach(function(el){
+        el.style.display=(f==='all'||el.dataset.section===f)?'':'none';
+      });
+      var idx=0;
+      document.querySelectorAll('#pubContainer .pub-item').forEach(function(item){
+        if(f==='all'||item.dataset.type===f){
+          item.classList.remove('hidden');
+          item.style.animation='none';
+          void item.offsetHeight;
+          item.style.animationDelay=(idx*0.03)+'s';
+          item.style.animation='';
+          idx++;
+        }else{
+          item.classList.add('hidden');
+        }
+      });
+    });
+  });
+  setTimeout(animateCounters,400);
+}
+
+if(document.readyState==='loading'){
+  document.addEventListener('DOMContentLoaded',initPortfolio);
+}else{
+  initPortfolio();
+}
 </script>
 </body>
 </html>
